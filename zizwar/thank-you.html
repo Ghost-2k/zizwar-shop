@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You</title>
+    <link rel="stylesheet" href="assets/stylesheet.css" />
+    <script>
+      // Function to retrieve URL parameters
+      function getUrlParameter(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+        var results = regex.exec(location.search);
+        return results === null
+          ? ""
+          : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+
+      // Retrieve URL parameters and display them
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("userFirstName").innerText =
+          getUrlParameter("firstName");
+        document.getElementById("userLastName").innerText =
+          getUrlParameter("lastName");
+        document.getElementById("userPhone").innerText =
+          getUrlParameter("phone");
+        document.getElementById("userCity").innerText = getUrlParameter("city");
+        document.getElementById("userAddress").innerText =
+          getUrlParameter("address");
+      });
+    </script>
+  </head>
+  <body>
+    <div class="thank-you-container">
+      <div class="thank-you-content">
+        <div class="one">
+          <div class="check"><img src="assets/check.png" alt="" /></div>
+          <h1>شكرا لطلبك! <span id="userFirstName"></span></h1>
+        </div>
+        <p>تم تأكيد الطلب وسوف نتصل بك قريبا</p>
+        <h2>تفاصيل الطلب:</h2>
+        <div class="customer-details">
+          <p><strong>الاسم الشخصي:</strong> <span id="userFirstName"></span></p>
+          <p><strong>الاسم العائلي:</strong> <span id="userLastName"></span></p>
+          <p><strong>رقم الهاتف:</strong> <span id="userPhone"></span></p>
+          <p><strong>المدينة:</strong> <span id="userCity"></span></p>
+          <p><strong>العنوان:</strong> <span id="userAddress"></span></p>
+        </div>
+
+        <div id="orderContent"></div>
+        <p><strong>السعر الكلي:</strong> <span id="totalPrice"></span></p>
+      </div>
+    </div>
+
+    <script>
+      // Retrieve checkout content from local storage and display it
+      var orderContent = document.getElementById("orderContent");
+      var storedContent = JSON.parse(localStorage.getItem("checkoutContent"));
+      var totalPrice = 0;
+
+      if (storedContent && storedContent.length > 0) {
+        storedContent.forEach(function (item) {
+          orderContent.innerHTML += `
+                <div class="checkout-item">
+                    <div class="product-img">
+                        <img class="product-image" src="${item.image}" alt="Product Image"/>
+                        <p class="quantity">${item.quantity}</p>
+                    </div>
+                    <div class="product-info">
+                        <p>${item.title}</p>
+                        <p>${item.price} د.م</p>  
+                    </div>
+                </div>
+                <hr>`;
+          totalPrice += parseFloat(item.price) * parseInt(item.quantity);
+        });
+      } else {
+        orderContent.innerHTML = "<p>No items in the cart.</p>";
+      }
+
+      document.getElementById("totalPrice").innerText =
+        totalPrice.toFixed(2) + " د.م";
+
+      // Preloader code
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
