@@ -285,15 +285,15 @@ section {
     line-height: 20px;
   }
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1080px) {
   .herosection p {
-    text-align: center !important;
-    width:80% !important; /* Adjusted width for better readability */
+    text-align: center;
+    width: 80% !important; /* Adjusted width for better readability */
     /* Centering the element horizontally */
-
+    transform: translate(15%);
     font-size: 28px !important; /* Adjust for centering */
-   
   }
+  
 }
 /* start hero section*/
 section .herosection p {
