@@ -285,10 +285,10 @@ section {
     line-height: 20px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1920px) {
   .herosection p {
-    text-align: center;
-  /* Adjusted width for better readability */
+    text-align: center !important;
+    width:80% !important; /* Adjusted width for better readability */
     /* Centering the element horizontally */
 
     font-size: 28px !important; /* Adjust for centering */
