@@ -11,6 +11,10 @@
   --font-weight: 400;
   --font-weight-bold: 700;
 }
+/* CSS for smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   direction: rtl;
@@ -193,10 +197,9 @@ section {
 @media screen and (max-width: 1024px) {
   .herosection p {
     text-align: center;
-    width: 80% !important; /* Adjusted width for better readability */
-    /* Centering the element horizontally */
+    width: 80% !important;
     transform: translate(15%);
-    font-size: 28px !important; /* Adjust for centering */
+    font-size: 28px !important;
   }
 
   /* Center the button */
@@ -264,16 +267,16 @@ section {
     height: 290px;
     display: flex;
     flex-wrap: wrap;
-    margin: 3px;
+    margin: 5px;
   }
-  .products-list ul li img {
+  #products-list ul li img {
     height: 50%;
   }
-  .products-list ul li p {
+  #products-list ul li p {
     margin-top: -10px;
     font-size: 13px !important;
   }
-  .products-list ul li h5 {
+  #products-list ul li h5 {
     margin-top: 5px;
     font-size: 15px !important;
   }
@@ -286,9 +289,8 @@ section {
     line-height: 20px;
   }
   .userinputs h5 {
-  width: 300px !important;
-  line-height: 30px !important;
-
+    width: 300px !important;
+    line-height: 30px !important;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -340,7 +342,7 @@ main {
   width: 100%;
 }
 
-.products-list ul {
+#products-list ul {
   margin-top: 100px;
   padding: 0;
   list-style: none;
@@ -351,7 +353,7 @@ main {
   height: 100%;
   justify-content: center;
 }
-.products-list ul li {
+#products-list ul li {
   position: relative;
   box-shadow: 5px 5px #e3e3e3;
   display: flex;
@@ -364,11 +366,11 @@ main {
   transition: 0.3s;
   cursor: pointer;
 }
-.products-list ul li:hover {
+#products-list ul li:hover {
   transform: scale(1.05);
   transition: 0.3s;
 }
-.products-list ul li h5 {
+#products-list ul li h5 {
   position: absolute;
   top: 72%;
   font-family: Alexandria;
@@ -377,7 +379,7 @@ main {
   font-size: larger;
   text-transform: uppercase;
 }
-.products-list ul li p {
+#products-list ul li p {
   position: absolute;
   width: 90%;
   text-align: center;
@@ -433,11 +435,11 @@ main {
   box-shadow: 5px 5px #d5b981;
   transition: 0.3s;
 }
-.products-list ul li:hover {
+#products-list ul li:hover {
   border: 0.5px solid #d5b981;
   transition: 0.8s;
 }
-.products-list ul li img {
+#products-list ul li img {
   width: 100%;
   height: 60%;
   overflow: hidden;
