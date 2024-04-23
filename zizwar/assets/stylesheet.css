@@ -245,6 +245,7 @@ section {
 
 @media screen and (max-width: 1024px) {
   .herosection p {
+    text-align: center;
     width: 80% !important; /* Adjusted width for better readability */
     /* Centering the element horizontally */
     transform: translate(15%);
