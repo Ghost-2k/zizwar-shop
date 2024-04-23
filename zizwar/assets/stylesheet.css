@@ -264,6 +264,7 @@ section {
     height: 290px;
     display: flex;
     flex-wrap: wrap;
+    margin: 5px;
   }
   .products-list ul li img {
     height: 50%;
