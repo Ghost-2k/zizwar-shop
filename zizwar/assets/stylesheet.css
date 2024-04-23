@@ -285,12 +285,12 @@ section {
     line-height: 20px;
   }
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1024px) {
   .herosection p {
     text-align: center;
-    width: 100% !important; /* Adjusted width for better readability */
+  /* Adjusted width for better readability */
     /* Centering the element horizontally */
-    transform: translate(15%);
+
     font-size: 28px !important; /* Adjust for centering */
   }
 }
