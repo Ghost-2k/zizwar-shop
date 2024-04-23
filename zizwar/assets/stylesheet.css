@@ -292,6 +292,7 @@ section {
     width: 80%;
     margin: 0 auto; /* Centering the element horizontally using margin */
     font-size: 28px;
+      display: none;
   }
   
 }
