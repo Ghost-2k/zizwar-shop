@@ -292,6 +292,7 @@ section {
     /* Centering the element horizontally */
 
     font-size: 28px !important; /* Adjust for centering */
+    display: none;
   }
 }
 /* start hero section*/
