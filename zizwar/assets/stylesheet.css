@@ -287,7 +287,8 @@ section {
 }
 @media screen and (min-width: 1920px) {
   .herosection p {
- text-align: center;
+     .herosection p {
+    text-align: center;
     width: 80%;
     margin: 0 auto; /* Centering the element horizontally using margin */
     font-size: 28px;
