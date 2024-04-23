@@ -290,7 +290,7 @@ section {
     text-align: center;
     width: 80% !important; /* Adjusted width for better readability */
     /* Centering the element horizontally */
-    transform: translate(15%);
+   
     font-size: 28px !important; /* Adjust for centering */
   }
   
