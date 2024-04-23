@@ -264,7 +264,7 @@ section {
     height: 290px;
     display: flex;
     flex-wrap: wrap;
-    margin: 5px;
+    mrgin: 5px;
   }
   .products-list ul li img {
     height: 50%;
@@ -288,14 +288,15 @@ section {
 }
 @media screen and (min-width: 1920px) {
   .herosection p {
-     .herosection p {
     text-align: center;
-    width: 80%;
-    margin: 0 auto; /* Centering the element horizontally using margin */
-    font-size: 28px;
-      display: none;
+    width: 60% !important; /* Adjusted width for better readability */
+    /* Centering the element horizontally */
+
+    font-size: 50px !important; /* Adjust for centering */
   }
-  
+  .herosection button {
+    margin-top: 100px;
+  }
 }
 /* start hero section*/
 section .herosection p {
