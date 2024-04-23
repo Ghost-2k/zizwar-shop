@@ -264,7 +264,7 @@ section {
     height: 290px;
     display: flex;
     flex-wrap: wrap;
-    mrgin: 2px;
+    margin: 3px;
   }
   .products-list ul li img {
     height: 50%;
@@ -284,6 +284,11 @@ section {
     height: 49px;
     font-size: 10px !important;
     line-height: 20px;
+  }
+  .userinputs h5 {
+  width: 300px !important;
+  line-height: 30px !important;
+
   }
 }
 @media screen and (min-width: 1920px) {
@@ -1023,6 +1028,7 @@ hr {
   justify-content: center;
   margin-top: 16px;
   background-size: cover;
+  cursor: pointer;
 }
 .scrolling-img {
   width: 100%;
@@ -1036,4 +1042,9 @@ hr {
   border-radius: 1px;
   width: 20%;
   height: 86%;
+  cursor: pointer;
+}
+.scrolling-img img:hover {
+  border: 2px solid black;
+  border-radius: 5px;
 }
