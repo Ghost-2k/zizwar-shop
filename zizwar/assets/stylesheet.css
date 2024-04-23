@@ -187,60 +187,7 @@ section {
 .shopping-cart a {
   color: black;
 }
-/*phone*/
-/*@media screen and (max-width: 500px) {
-  .nav-bar {
-    display: flex;
-    flex-direction: row-reverse;
-    border-bottom: 1px white solid;
-  }
-  .nav-bar ul {
-    position: absolute;
-    top: 69px;
-    right: -5000px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 35px;
-    width: 100%;
-    height: 240px;
-    border-bottom: 1px white solid;
-    backdrop-filter: blur(1px);
-    font-size: 18px;
-  }
-  .nav-bar .fa-regular {
-    font-size: 25px;
-    display: block;
-    cursor: pointer;
-  }
-  #check:checked ~ .nav-bar ul {
-    right: -40px; /* Show sidebar when checkbox is checked 
-    transition: right 0.2s ease-in-out;
-  }
-  .logo {
-    display: flex;
-    justify-content: center;
-  }
-  .logo img {
-    width: 38%;
-  }
 
-  section .herosection p {
-    width: 390px !important;
-  }
-  section .herosection p {
-    width: 400px;
-    position: absolute;
-    right: 0%;
-    top: 22%;
-    text-align: center;
-  }
-  .herosection button {
-    position: absolute;
-    left: 30%;
-  }
-}
 /* CSS for smaller screens */
 
 @media screen and (max-width: 1024px) {
@@ -338,7 +285,15 @@ section {
     line-height: 20px;
   }
 }
-
+@media screen and (min-width: 1080px) {
+  .herosection p {
+    text-align: center;
+    width: 100% !important; /* Adjusted width for better readability */
+    /* Centering the element horizontally */
+    transform: translate(15%);
+    font-size: 28px !important; /* Adjust for centering */
+  }
+}
 /* start hero section*/
 section .herosection p {
   position: absolute;
@@ -969,7 +924,6 @@ hr {
   display: flex;
   flex-direction: column;
   margin: 0px 10px;
-
 }
 .product-description h2 {
   margin: 20px;
@@ -977,16 +931,13 @@ hr {
   color: #333;
   font-weight: 400;
   word-spacing: 2px;
-
 }
-.product-description h4{
+.product-description h4 {
   font-weight: 300;
   text-align: center;
-padding: 20px;
+  padding: 20px;
   font-size: 30px;
 }
-
-
 
 .product-description p {
   margin: 0 20px;
