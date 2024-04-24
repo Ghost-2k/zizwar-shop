@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="assets/barberdark.png" />
+    <link rel="stylesheet" href="assets/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+    />
+    <title>zizwar-shop</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header id="page-header">
+      <input type="checkbox" id="check" />
+      <div class="nav-bar">
+        <label for="check" class="fa-regular fa-bars"></label>
+        <!-- when i click on icon check the box-->
+        <div class="logo">
+          <a href="index.html"><img src="assets/barber.png" alt="" /></a>
+        </div>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="shop-all.html">جميع المنتجات</a></li>
+          <li><a href="about-us.html">معلومات عنا </a></li>
+          <li><a href="contact-us.html">اتصل بنا</a></li>
+        </ul>
+        <!-- Update the icon to be clickable -->
+        <i class="fa-thin fa-cart-shopping" id="cart-icon"></i>
+        <!-- Shopping cart content -->
+        <div class="shopping-cart" id="shopping-cart">
+          <div id="zzzzz"><i class="fa-light fa-xmark"></i></div>
+          <div id="cartitem">your cart is empty</div>
+          <div class="total">
+            <h4>المجموع</h4>
+            <h4 id="total">0.00 د.م</h4>
+          </div>
+          <div class="productinCArd"></div>
+          <div class="buttoncontainer">
+            <button class="checkout">checkout</button>
+            <a href="#"> continue shopping</a>
+          </div>
+          <!-- Cart content will be displayed here -->
+        </div>
+      </div>
+    </header>
+    <!-- main -->
+    <main>
+      <section>
+        <div class="herosection">
+          <p>
+            اكتشف عالم الأناقة والتميز مع منتجاتنا الرجالية المتنوعة. ارتقِ
+            بأسلوبك وجمالك. زر متجرنا اليوم واستمتع بتجربة تسوق فريدة.
+          </p>
+          <a href="#products-list"><button>تسوق الآن</button></a>
+        </div>
+      </section>
+      <div class="main">
+        <div id="products-list">
+          <ul>
+            <li id="product">
+              <a href="KM-1949.html"><img src="assets/km1949.webp" /></a>
+              <h5><span>299</span>د,م</h5>
+              <p>>Kemei Hair Clipper KM-1949 Series</p>
+              <button class="add-to-card">أضف إلى السلة</button>
+              <button class="buy-now">شراء الآن</button>
+            </li>
+            <li id="product">
+              <a href="KM-2028.html"><img src="assets/km2028.webp" /></a>
+              <h5><span>299</span>د,م</h5>
+              <p>Kemei Barber Shaver KM-2028 Series</p>
+              <button class="add-to-card">أضف إلى السلة</button>
+              <button class="buy-now">شراء الآن</button>
+            </li>
+            <li id="product">
+              <a href="km-1986.html"><img src="assets/km1986.jpg" /></a>
+              <h5><span>299</span>د,م</h5>
+              <p>kemei professional Clipper km-1986</p>
+              <button class="add-to-card">أضف إلى السلة</button>
+              <button class="buy-now">شراء الآن</button>
+            </li>
+            <li id="product">
+              <a href="km-2096.html"><img src="assets/km2296.jpg" /></a>
+              <h5><span>299</span>د,م</h5>
+              <p>Kemei Hair trimmer km-2296 Series</p>
+              <button class="add-to-card">أضف إلى السلة</button>
+              <button class="buy-now">شراء الآن</button>
+            </li>
+            <li id="product">
+              <a href="km-5021.html"><img src="assets/km5021.webp" /></a>
+              <h5><span>299</span>د,م</h5>
+              <p>Kemei km-5021 Series</p>
+              <button class="add-to-card">أضف إلى السلة</button>
+              <button class="buy-now">شراء الآن</button>
+            </li>
+            <li id="product">
+              <a href="gek-3800.html"><img src="assets/gek3800.webp" /></a>
+              <h5><span>299</span>د,م</h5>
+              <p>Gek Sechoir 3800 professionnel</p>
+              <button class="add-to-card">أضف إلى السلة</button>
+              <button class="buy-now">شراء الآن</button>
+            </li>
+            <li id="product">
+              <a href="kirkland.html"> <img src="assets/kirkland.jpg" /></a>
+              <h5><span>299</span>د,م</h5>
+              <p>KKirkland Minoxidil 5%</p>
+              <button class="add-to-card">أضف إلى السلة</button>
+              <button class="buy-now">شراء الآن</button>
+            </li>
+            <li id="product">
+              <img src="assets/65.webp" alt="" />
+              <h5><span>299</span>د,م</h5>
+              <p>Kemei Hair Trimmer KM-2299 Series</p>
+              <button class="add-to-card">أضف إلى السلة</button>
+              <button class="buy-now">شراء الآن</button>
+            </li>
+          </ul>
+        </div>
+        <button
+          class="explore-more"
+          onclick="window.location.href='shop-all.html';"
+        >
+          إكتشف المزيد
+        </button>
+      </div>
+      <!--footer -->
+      <div class="footer">
+        <img src="assets/barber.png" alt="" />
+        <div class="footer-titles">
+          <div class="f-contact">
+            <h6>إتصل بنا</h6>
+            <a href="contact-us.html">إتصل بنا</a>
+            <a href="faq.html">الأسئلة المتكررة</a>
+          </div>
+          <div class="f-about">
+            <h6>عن المتجر</h6>
+            <a href="about-us.html">عن المتجر</a>
+            <a href="payment-method.html">طرق الدفع</a>
+            <a href="shipping-delevry.html">الشحن والتسليم</a>
+          </div>
+          <div class="f-terms">
+            <h6>الشروط والسياسات</h6>
+            <a href="terms-and-conditions.html">شروط الاستخدام</a>
+            <a href="return-policy.html">سياسة الإستبدال والإسترجاع</a>
+            <a href="privacy-policy.html">سياسة الخصوصية</a>
+          </div>
+        </div>
+
+        <div class="footer-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+        </div>
+        <hr />
+        <p><span>2024 ©</span>zizwar shop All rights reserved</p>
+      </div>
+    </main>
+    <!-- JavaScript code -->
+    <script src="script.js"></script>
+  </body>
+</html>
