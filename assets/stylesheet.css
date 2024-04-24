@@ -528,6 +528,10 @@ main {
   background-color: white;
   margin: 15px 0;
 }
+.footer-icons{
+  display: flex;
+  justify-content: center;
+}
 .footer-icons i {
   margin-top: 40px;
   width: 200px;
