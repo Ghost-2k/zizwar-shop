@@ -235,7 +235,7 @@ section {
     border-top: 1px white solid;
     backdrop-filter: blur(1px);
     font-size: 18px;
-     transition: top 0.3s ease-in-out;
+    transition: top 0.3s ease-in-out;
   }
   .nav-bar .fa-regular {
     font-size: 25px;
@@ -268,7 +268,6 @@ section {
     display: flex;
     flex-wrap: wrap;
     margin: 5px !important;
- 
   }
   #products-list ul li img {
     height: 50%;
@@ -288,6 +287,13 @@ section {
     height: 49px;
     font-size: 10px !important;
     line-height: 20px;
+  }
+  .footer hr {
+    width: 100% !important;
+    border: none !important;
+    height: 0.1px !important;
+    background-color: white !important;
+    margin: 15px 0 !important;
   }
   .userinputs h5 {
     width: 300px !important;
@@ -528,7 +534,7 @@ main {
   background-color: white !important;
   margin: 15px 0 !important;
 }
-.footer-icons{
+.footer-icons {
   display: flex;
   justify-content: center;
 }
