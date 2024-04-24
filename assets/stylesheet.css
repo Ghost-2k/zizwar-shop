@@ -522,11 +522,11 @@ main {
   transition: 0.4s;
 }
 .footer hr {
-  width: 100%;
-  border: none;
-  height: 0.1px;
-  background-color: white;
-  margin: 15px 0;
+  width: 100% !important;
+  border: none !important;
+  height: 0.1px !important;
+  background-color: white !important;
+  margin: 15px 0 !important;
 }
 .footer-icons{
   display: flex;
