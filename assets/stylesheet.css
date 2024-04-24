@@ -221,9 +221,10 @@ section {
     border-bottom: 1px white solid;
   }
   .nav-bar ul {
+    background-color: #694531;
     position: absolute;
-    top: 69px;
-    right: -5000px;
+    top: -5000px;
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -234,6 +235,7 @@ section {
     border-bottom: 1px white solid;
     backdrop-filter: blur(1px);
     font-size: 18px;
+     transition: top 0.3s ease-in-out;
   }
   .nav-bar .fa-regular {
     font-size: 25px;
@@ -242,8 +244,8 @@ section {
     margin-left: 50px;
   }
   #check:checked ~ .nav-bar ul {
-    right: -40px; /* Show sidebar when checkbox is checked */
-    transition: right 0.2s ease-in-out;
+    top: 69px; /* Show sidebar when checkbox is checked */
+    transition: top 0.3s ease-in-out;
   }
   .logo {
     display: flex;
