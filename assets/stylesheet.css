@@ -272,7 +272,7 @@ section {
     height: 285px !important;
     display: flex;
     flex-wrap: wrap;
-    margin: 5px !important;
+    margin: 10px !important;
   }
   #products-list ul li img {
     height: 50%;
