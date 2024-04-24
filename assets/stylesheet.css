@@ -202,20 +202,18 @@ section {
     font-size: 28px !important;
   }
 
-  /* Center the button */
   .herosection button {
-    position: absolute; /* Position the button absolutely */
-    top: 70%; /* Adjust the vertical position */
-    left: 50% !important; /* Move the button to the center horizontally */
+    position: absolute;
+    top: 70%;
+    left: 50% !important;
     transform: translateX(-50%);
-    margin-top: 90px; /* Adjust for centering */
+    margin-top: 90px;
   }
   .explore-more {
-    position: absolute; /* Position the button absolutely */
-    /* Adjust the vertical position */
-    left: 50% !important; /* Move the button to the center horizontally */
+    position: absolute;
+    left: 50% !important;
     transform: translateX(-50%);
-    margin-top: 90px; /* Adjust for centering */
+    margin-top: 90px;
   }
   .nav-bar {
     display: flex;
@@ -263,11 +261,11 @@ section {
     margin-left: 0;
   }
   #product {
-    width: 150px;
-    height: 290px;
+    width: 150px !important;
+    height: 285px !important;
     display: flex;
     flex-wrap: wrap;
-    margin: px;
+ 
   }
   #products-list ul li img {
     height: 50%;
